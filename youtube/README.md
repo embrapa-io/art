@@ -6,7 +6,7 @@ Personalização → Branding.
 | Arquivo | Uso | Medidas |
 | --- | --- | --- |
 | `banner-2560x1440.jpg` | imagem do banner | 2560×1440 (recomendado; mínimo 2048×1152, até 6 MB) |
-| `foto-perfil-800x800.png` | foto do perfil | 800×800 (mínimo 98×98, até 4 MB) |
+| `foto-perfil-2048x2048.png` | foto do perfil | 2048×2048 (mínimo 98×98, até 4 MB) |
 
 ## Banner
 
@@ -27,6 +27,11 @@ largura, inclinação de 0,15, centrado. O ícone traçado da marca (`logo/brand
 arredondados e não serve aqui.
 
 - `previa/foto-perfil-recorte-circular.png`: como o YouTube mostra.
+
+O YouTube guarda o PNG enviado e entrega cópias em JPEG de tamanho fixo (68, 88, 120, 160, 176, 320 e 900 px), escolhidas
+pela página conforme a tela. Medido em 23/11/2026: o original guardado é idêntico ao PNG enviado, e as cópias da versão
+nova são tão nítidas quanto as de 2023 ou mais (na de 900 px, 5 px de transição na borda do `#`, contra 8 px na antiga,
+que era de 512 px e saía ampliada). Por isso a foto sai em 2048 px: todas as cópias são reduções, nunca ampliações.
 
 ## Fontes e como gerar de novo
 
