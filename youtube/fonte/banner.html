@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Banner do canal do Embrapa I/O no YouTube, 2560×1440 (o recomendado; mínimo 2048×1152, até 6 MB).
+     O YouTube mostra recortes diferentes: a TV mostra tudo; o computador, a faixa central de 2560×423; o celular, a
+     área segura de 1546×423 no centro. Por isso a marca e a tríade ficam inteiras dentro da área segura (x 507–2053,
+     y 508–931), com folga. Foto: a mesma das capas dos vídeos (youtube/splash/assets/img/background.jpg). Tríade
+     atual: Embrapa · MAPA · Governo Federal (sem o selo de 50 anos de 2023). -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<style>
+  html, body { margin: 0; width: 2560px; height: 1440px; overflow: hidden; background: #000; }
+  #foto { position: absolute; inset: 0; background: url(assets/background.jpg) center 35% / cover no-repeat; }
+  /* véu: a foto clara no alto à esquerda, escurecendo para baixo e para a direita, como no banner de 2023; mais
+     escuro atrás da marca, para a leitura na faixa do computador */
+  #veu { position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 1250px 360px at 50% 50%, rgba(4, 3, 8, 0.42), rgba(4, 3, 8, 0) 100%),
+      linear-gradient(90deg, rgba(4, 3, 8, 0) 45%, rgba(4, 3, 8, 0.38) 100%),
+      linear-gradient(165deg, rgba(4, 3, 8, 0) 0%, rgba(4, 3, 8, 0.26) 38%, rgba(4, 3, 8, 0.78) 72%, rgba(4, 3, 8, 0.94) 100%); }
+  #marca { position: absolute; left: 50%; top: 566px; width: 880px; transform: translateX(-50%); }
+  #triade { position: absolute; left: 50%; top: 646px; width: 920px; transform: translateX(-50%); }
+  /* guia da área segura, só na prévia (?guia) */
+  #guia { display: none; position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px;
+    outline: 4px dashed #FFB547; }
+  body.guia #guia { display: block; }
+</style>
+</head>
+<body>
+  <div id="foto"></div>
+  <div id="veu"></div>
+  <img id="marca" src="assets/logo-embrapa-io-white.svg" alt="#embrapa.io" />
+  <img id="triade" src="assets/government-triad-white.png" alt="Embrapa · Ministério da Agricultura e Pecuária · Governo Federal" />
+  <div id="guia"></div>
+  <script>if (location.search.includes("guia")) document.body.classList.add("guia");</script>
+</body>
+</html>

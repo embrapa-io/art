@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- «#» da foto do perfil do canal, medido na versão de 2023 (512 px): barras de 37 px, inclinação de 0,15, centrado -->
+  <g fill="#FFFFFF">
+    <polygon points="203,103 240,103 194,410 157,410" />
+    <polygon points="318,103 355,103 309,410 272,410" />
+    <rect x="127" y="178" width="259" height="37" />
+    <rect x="127" y="298" width="259" height="37" />
+  </g>
+</svg>
